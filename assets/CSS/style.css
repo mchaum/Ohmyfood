@@ -163,13 +163,20 @@ input::placeholder {
     gap: 25px;
 }
 
+.fonctionnement-steps-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .button-grey {
     border-radius: 20px;
     border: none;
     background-color: var(--main-bg-color);
-    padding: 28px;
+    padding: 28px 28px 28px 0;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     width: 322px;
+    font-size: 16px;
 }
 
 .button-grey-icon {
@@ -182,11 +189,11 @@ input::placeholder {
     color: #9356DC;
 }
 
-.fonctionnement-steps span {
+.fonctionnement-steps-btn span {
     display: flex;
     height: 24px;
     width: 24px;
-    margin-left: 20px;
+    margin-right: -12px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -194,6 +201,7 @@ input::placeholder {
     background-color: #9356dc;
     font-size: 14px;
     font-weight: 500;
+    position: relative;
 }
 
 /*****Restaurants*****/

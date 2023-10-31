@@ -7,6 +7,7 @@
 :root {
     --main-bg-color: #F6F6F6;
     --second-txt-color: #353535;
+    --second-bg-color: #99E2D0;
 }
 
 h1 {
@@ -231,10 +232,20 @@ input::placeholder {
 }
 
 .restaurant-card-content {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    margin: 0 0 0 13px;
-    justify-content: space-around; 
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 13px;
+    width: 100%;
+}
+
+.restaurant-card-content i {
+    position: absolute;
+    font-size: 24px;
+    cursor: pointer;
+    right: 35px;
+    margin-top: 33px;
 }
 
 .restaurant-card a {
@@ -250,6 +261,16 @@ input::placeholder {
     color: black;
     padding-bottom: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.nouveau {
+    background-color: var(--second-bg-color);
+    padding: 7px 9px;
+    position: absolute;
+    color: #008766;
+    right: 35px;
+    margin-top: 15px;
+    border-radius: 3px;
 }
 
 /*****Pages des menus*****/
@@ -346,24 +367,31 @@ footer {
 
 /*****Media Queries*****/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
    
     .fonctionnement-steps {
         flex-direction: row;
     }
+
+    .fonctionnement h1 {
+        padding-left: 11%;
+    }
     
-.restaurants {
-    padding-left: 180px;
-    padding-right: 180px;
-}
+    .restaurants {
+        padding-left: 11%;
+        padding-right: 11%
+    }
+
 
     .restaurants-list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
-    .restaurant-card a {
-        width: 34,6%;
+    .restaurant-card {
+        width: 45%;
     }
+
 }

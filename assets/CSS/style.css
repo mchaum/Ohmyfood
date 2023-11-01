@@ -2,6 +2,8 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -31,6 +33,7 @@ h4 {
     color: white;
     font-size: 18px;
     font-weight: 400; 
+    margin: 0 0 15px 10px;
 }
 
 h5 {
@@ -128,14 +131,11 @@ header .logo {
 }
 
 header img {
-    height: 36px;
-    width: 197px;
+    width: 162px;
 }
 
 header i {
-    display: flex;
-    align-items: center;
-    margin: 25px 0 17px 23px;
+    margin: 17px 0 17px 23px;
     font-size: 20px;
     color: black;
     position: absolute;
@@ -182,8 +182,12 @@ input::placeholder {
     text-align: center;
 }
 
+.explore h1 {
+    padding: 15px;
+}
+
 .explore h2 {
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 .explore .button-violet {
@@ -193,7 +197,7 @@ input::placeholder {
 /*****Fonctionnement*****/
 
 .fonctionnement {
-    padding: 30px 0 50px 0;
+    padding: 48px 0 65px 0;
 }
 
 .fonctionnement h1 {
@@ -254,7 +258,7 @@ input::placeholder {
 
 .restaurants {
     background-color: var(--main-bg-color); 
-    padding: 30px 0 50px 0;}
+    padding: 48px 0 60px 0;}
 
 .restaurants h1 {
     margin-left: 20px;
@@ -280,9 +284,14 @@ input::placeholder {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 5px;
     padding-left: 13px;
     width: 100%;
+}
+
+.restaurants-card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .restaurant-card-content i {
@@ -290,7 +299,7 @@ input::placeholder {
     font-size: 24px;
     cursor: pointer;
     right: 35px;
-    margin-top: 33px;
+    margin-top: 5px;
 }
 
 .restaurant-card a {
@@ -304,8 +313,6 @@ input::placeholder {
     background-color: white;
     text-decoration: none;
     color: black;
-    padding-bottom: 20px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .nouveau {
@@ -335,8 +342,16 @@ input::placeholder {
 }
 
 .menus h5 {
-    margin-top: 30px;
+    margin-top: 32px;
     padding-left: 17px;
+}
+
+.menus-details {
+    margin-top: 32px;
+}
+
+.menus-details-plats {
+    margin-bottom: 40px;
 }
 
 .menus-details-plats h6 {
@@ -347,8 +362,7 @@ input::placeholder {
     width: 40px;
     height: 3px;
     background-color: #99e2d0;
-    margin-top: -30px;
-    margin-left: 17px;
+    margin: 5px 0 5px 17px;
 }
 
 .menus-commander {
@@ -356,6 +370,11 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.menus-commander .button-violet {
+    padding: 0 48px;
 }
 
 .menus-card {
@@ -366,7 +385,7 @@ input::placeholder {
 }
 
 .menus-card-plat {
-    width: 85%;
+    width: 93%;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -375,16 +394,25 @@ input::placeholder {
     flex-wrap: wrap;
     background-color: white;
     text-decoration: none;
-    margin: 12px 0;
+    margin: 8px 0;
     padding: 0 15px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+}
+
+.menus-card-txt {
+    padding: 15px 0;
+}
+
+.menus-card-txt p {
+    padding-top: 5px;
+    font-size: 15px;
 }
 
 .menus-card-price p {
     font-weight: 700;
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 5%;
 }
 
@@ -392,7 +420,7 @@ input::placeholder {
 
 footer {
     background-color: #353535;
-    padding: 0 22px 15px 22px;
+    padding: 22px 22px 15px 22px;
     position: relative;
 }
 

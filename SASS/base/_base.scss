@@ -1,0 +1,27 @@
+@use '../base/typo' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+h1, h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p {
+    @include text-font;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: auto;
+    margin: auto;
+}

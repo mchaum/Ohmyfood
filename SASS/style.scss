@@ -1,1 +1,17 @@
-@use
+@use './base/reset';
+@use './base/typo';
+
+@use './abstracts/mixins';
+@use './abstracts/variables';
+
+@use './animations/loader';
+
+@use './components/badge';
+@use './components/buttons';
+@use './components/cards';
+
+@use './layout/header';
+@use './layout/footer';
+
+@use './pages/home';
+@use './pages/menu';

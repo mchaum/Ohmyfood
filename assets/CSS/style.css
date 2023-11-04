@@ -12,39 +12,14 @@
     --second-bg-color: #99E2D0;
 }
 
-h1 {
+h1, h2 {
     font-size: 24px;
     font-weight: 700;
-}
-
-h2 {
-    font-size: 18px;
-    color: var(--second-txt-color);
-    font-weight: 300;
 }
 
 h3 {
     font-size: 18px;
     font-weight: 700;
-}
-
-h4 {
-    font-family: 'Shrikhand', sans-serif;
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0 0 15px 10px;
-}
-
-h5 {
-    font-family: 'Shrikhand', sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-}
-
-h6 {
-    font-size: 16px;
-    font-weight: 300;
 }
 
 p {
@@ -69,8 +44,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0;
-    margin: 0;
+    padding: auto;
+    margin: auto;
 }
 
 /*****Loader*****/
@@ -95,7 +70,7 @@ body {
     border-bottom-color: transparent;
     border-radius: 50%;
     box-sizing: border-box;
-    animation: rotation 1s linear infinite;
+    animation: rotation 2s linear infinite;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -141,7 +116,7 @@ header img {
     width: 162px;
 }
 
-header i {
+header a {
     margin: 17px 0 17px 23px;
     font-size: 20px;
     color: black;
@@ -193,8 +168,10 @@ input::placeholder {
     padding: 15px;
 }
 
-.explore h2 {
+.explore p {
     padding-bottom: 30px;
+    font-size: 18px;
+    color: var(#353535);
 }
 
 .explore .button-violet {
@@ -207,7 +184,7 @@ input::placeholder {
     padding: 48px 0 65px 0;
 }
 
-.fonctionnement h1 {
+.fonctionnement h2 {
     margin-left: 20px;
     margin-bottom: 30px;
 }
@@ -215,25 +192,28 @@ input::placeholder {
 .fonctionnement-steps {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 25px;
 }
 
 .fonctionnement-steps-btn {
+    position: relative;
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
 .button-grey {
-    border-radius: 20px;
-    border: none;
-    background-color: var(--main-bg-color);
-    padding: 28px 28px 28px 0;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    width: 322px;
-    font-size: 16px;
+  height: 20px;
+  background-color: #f6f6f6;
+  padding: 28px 38px 28px 28px;
+  border: none;
+  border-radius: 20px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .button-grey-icon {
@@ -250,7 +230,9 @@ input::placeholder {
     display: flex;
     height: 24px;
     width: 24px;
-    margin-right: -12px;
+    left: 2%;
+    top: 25%;
+    z-index: 2;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -258,7 +240,7 @@ input::placeholder {
     background-color: #9356dc;
     font-size: 14px;
     font-weight: 500;
-    position: relative;
+    position: absolute;
 }
 
 /*****Restaurants*****/
@@ -268,7 +250,7 @@ input::placeholder {
     padding: 48px 0 60px 0;
 }
 
-.restaurants h1 {
+.restaurants h2 {
     margin-left: 20px;
     margin-bottom: 30px;
 }
@@ -321,6 +303,7 @@ input::placeholder {
     background-color: white;
     text-decoration: none;
     color: black;
+    position: relative;
 }
 
 .nouveau {
@@ -328,7 +311,7 @@ input::placeholder {
     padding: 7px 9px;
     position: absolute;
     color: #008766;
-    right: 35px;
+    right: 15px;
     margin-top: 15px;
     border-radius: 3px;
 }
@@ -349,9 +332,12 @@ input::placeholder {
     padding-bottom: 30px;
 }
 
-.menus h5 {
+.menus h2 {
     margin-top: 32px;
     padding-left: 17px;
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
 }
 
 .menu-title-heart {
@@ -375,8 +361,10 @@ input::placeholder {
     margin-bottom: 40px;
 }
 
-.menus-details-plats h6 {
+.menus-details-plats span {
     padding-left: 17px;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .menus-details-line {
@@ -445,6 +433,14 @@ footer {
     position: relative;
 }
 
+footer h2 {
+    font-family: 'Shrikhand', sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 15px 10px;
+}
+
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -476,6 +472,10 @@ footer {
         flex-direction: row;
     }
 
+    .button-grey {
+        width: 322px;
+    }
+
     .fonctionnement h1 {
         padding-left: 11%;
     }
@@ -498,7 +498,7 @@ footer {
     }
 
     .nouveau {
-        right: 14%;
+        right: 3%;
     }
 
     .menus {

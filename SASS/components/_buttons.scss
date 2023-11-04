@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+/***** Bouton violet *****/
+
+.button-violet {
+    height: 50px;
+    background: linear-gradient($secondary-color, $main-color);
+    border: none;
+    border-radius: 50px;
+    padding: 0 25px;
+    color: white;
+    @include text-font;
+    font-size: 16px;
+    font-weight: 500;
+
+    :hover {
+        opacity: 0.85;
+    }
+}
+
+
+/***** Bouton gris étapes fonctionnement *****/
+
+.button-grey {
+    height: 20px;
+    background-color: #f6f6f6;
+    padding: 28px 38px 28px 28px;
+    border: none;
+    border-radius: 20px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include btn-shadow;
+
+    .button-grey-icon {
+        padding-right: 15px;
+        color: #7E7E7E;
+    }
+    
+    .fa-store {
+        padding-right: 15px;
+        color: $main-color;
+    }
+  }

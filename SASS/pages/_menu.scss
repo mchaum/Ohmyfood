@@ -1,0 +1,112 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+/*****Pages des menus*****/
+
+.menu-img img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
+
+.menus {
+    border-radius: 40px 40px 0px 0px;
+    background-color: var($main-bg-color);
+    margin-top: -50px;
+    position: relative;
+    padding-bottom: 30px;
+
+    h2 {
+        margin-top: 32px;
+        padding-left: 17px;
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+    }
+}
+
+.menu-title-heart {
+    width: 70px;
+    position: relative;
+
+    .fa-full,
+    .fa-empty {
+    font-size: 24px;
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    }
+}
+
+
+.menus-details {
+    margin-top: 32px;
+}
+
+.menus-details-plats {
+    margin-bottom: 40px;
+
+    span {
+        padding-left: 17px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+.menus-details-line {
+    width: 40px;
+    height: 3px;
+    background-color: #99e2d0;
+    margin: 5px 0 5px 17px;
+}
+
+.menus-commander {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    .button-violet {
+        padding: 0 48px;
+    }
+}
+
+.menus-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menus-card-plat {
+    width: 93%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: white;
+    text-decoration: none;
+    margin: 8px 0;
+    padding: 0 15px;
+    @include menu-shadow;
+    box-sizing: border-box;
+
+    .menus-card-txt {
+        padding: 15px 0;
+    
+        p {
+            padding-top: 5px;
+            font-size: 15px;
+        }
+    }
+
+    .menus-card-price p {
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+    }
+}

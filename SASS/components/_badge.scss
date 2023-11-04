@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.nouveau {
+    background-color: var($secondary-bg-color);
+    padding: 7px 9px;
+    position: absolute;
+    color: #008766;
+    right: 15px;
+    margin-top: 15px;
+    border-radius: 3px;
+}

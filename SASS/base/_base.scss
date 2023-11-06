@@ -10,12 +10,18 @@ h1, h2 {
 h3 {
     font-size: 18px;
     font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 p {
     @include text-font;
     font-size: 17px;
     font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 body {

@@ -11,11 +11,14 @@
     padding: 0 25px;
     color: white;
     @include text-font;
+    @include btn-violet-shadow;
     font-size: 16px;
     font-weight: 500;
+    transition: opacity 300ms, box-shadow 300ms;
 
-    :hover {
+    &:hover {
         opacity: 0.85;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
     }
 }
 

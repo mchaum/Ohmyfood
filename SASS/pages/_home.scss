@@ -141,19 +141,34 @@
         margin-top: 5px;
     }
 
-    a {
-        height: 251px;
-        width: 100%;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        background-color: white;
-        text-decoration: none;
-        color: black;
-        position: relative;
+    .fa-solid {
+        opacity: 0;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(#ff79da, #9356dc);
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
     }
+}
+
+a {
+    height: 251px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
 }
 
 .restaurants-card-txt {

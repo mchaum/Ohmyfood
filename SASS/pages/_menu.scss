@@ -104,6 +104,58 @@
     @include menu-shadow;
     box-sizing: border-box;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.menus-card-txt {
+    padding: 15px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 75%;
+
+    p {
+        padding-top: 5px;
+        font-size: 15px;
+    }
+}
+
+.menus-card-check {
+    background-color: #99e2d0;
+    min-width: 60px;
+    height: 77px;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    right: -62px;
+    transform: translateX(0);
+    transition: transform 750ms ease;
+
+    i {
+        color: #ffffff;
+    }
+}
+
+.menus-card-plat:hover {
+
+    .menus-card-check {
+        transform: translateX(-62px);
+        transition: transform 750ms ease;
+
+        i {
+            transform: rotate(360deg);
+            transition: transform 750ms ease;
+        }
+    }
+
+    .menus-card-price {
+        transform: translateX(-62px);
+        transition: transform 750ms ease;
+    }
 }
 
 .menus-card-txt {
@@ -113,8 +165,9 @@
     white-space: nowrap;
 
     p {
-        padding-top: 5px;
-        font-size: 15px;
+        font-weight: 700;
+        padding-top: 38px;
+        margin-left: 10px;
     }
 }
 
@@ -122,8 +175,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     font-weight: 700;
+    position: absolute;
+    right: 2%;
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 750ms ease;
 
     p {
         font-weight: 700;

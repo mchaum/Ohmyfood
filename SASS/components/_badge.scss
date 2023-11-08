@@ -2,7 +2,7 @@
 @use '../abstracts/mixins' as *;
 
 .nouveau {
-    background-color: var($secondary-bg-color);
+    background-color: $tertiary-color;
     padding: 7px 9px;
     position: absolute;
     color: #008766;

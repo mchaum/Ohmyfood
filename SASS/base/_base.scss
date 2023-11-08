@@ -19,15 +19,12 @@ p {
     @include text-font;
     font-size: 17px;
     font-weight: 300;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: auto;
+    padding: 0;
     margin: auto;
 }

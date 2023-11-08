@@ -1,5 +1,6 @@
 @use './base/reset';
 @use './base/typo';
+@use './base/base';
 
 @use './abstracts/mixins';
 @use './abstracts/variables';
@@ -8,7 +9,6 @@
 
 @use './components/badge';
 @use './components/buttons';
-@use './components/cards';
 
 @use './layout/header';
 @use './layout/footer';

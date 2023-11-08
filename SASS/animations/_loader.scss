@@ -9,8 +9,9 @@
     right: 0;
     bottom: 0;
     left: 0;
-    animation: loader 2s forwards;
+    animation: loader 3s forwards;
     animation-fill-mode: both;
+    background-color: #353535;
 
     span {
         width: 100px;
@@ -40,12 +41,12 @@
 
 @keyframes loader {
     0% {
-        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 1;
         display: block;
     }
 
     100% {
-        background-color: rgba(0, 0, 0, 0);
+        opacity: 0;
         display: none;
     }
 }

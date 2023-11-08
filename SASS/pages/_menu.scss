@@ -11,7 +11,7 @@
 
 .menus {
     border-radius: 40px 40px 0px 0px;
-    background-color: var($main-bg-color);
+    background-color: $main-bg-color;
     margin-top: -50px;
     position: relative;
     padding-bottom: 30px;
@@ -87,6 +87,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .menus-card-plat {
@@ -96,11 +99,11 @@
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: white;
     text-decoration: none;
     margin: 8px 0;
-    padding: 0 15px;
+    padding: 0 0 0 15px;
     @include menu-shadow;
     box-sizing: border-box;
     overflow: hidden;
@@ -113,11 +116,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 75%;
 
     p {
         padding-top: 5px;
         font-size: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
 
@@ -156,20 +161,13 @@
         transform: translateX(-62px);
         transition: transform 750ms ease;
     }
-}
 
-.menus-card-txt {
-    padding: 15px 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-
-    p {
-        font-weight: 700;
-        padding-top: 38px;
-        margin-left: 10px;
+    .menus-card-txt {
+        max-width: 63%;
+        transition: max-width 750ms ease;
     }
 }
+
 
 .menus-card-price {
     display: flex;
@@ -177,7 +175,7 @@
     align-items: center;
     font-weight: 700;
     position: absolute;
-    right: 2%;
+    right: 4%;
     margin-left: 10px;
     transform: translateX(0);
     transition: transform 750ms ease;
@@ -185,6 +183,6 @@
     p {
         font-weight: 700;
         padding-top: 38px;
-        margin-left: 10px;
+    
     }
 }   

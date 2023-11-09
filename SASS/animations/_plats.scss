@@ -1,0 +1,25 @@
+.entree {
+    animation: menus-details-plats 500ms;
+}
+
+.plat {
+    animation: menus-details-plats 1000ms;
+}
+  
+.dessert {
+    animation: menus-details-plats 1500ms;
+}
+
+
+@keyframes menus-details-plats {
+    
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

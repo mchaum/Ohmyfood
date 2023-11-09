@@ -37,7 +37,7 @@
 /*****Explorer les restaurants*****/
 
 .explore {
-    background-color: var($main-bg-color);
+    background-color: $main-bg-color;
     padding: 30px;
     text-align: center;
 
@@ -100,6 +100,7 @@
         font-size: 14px;
         font-weight: 500;
         position: absolute;
+        left: 20px;
     }
 }
 
@@ -208,10 +209,14 @@
 
 @media screen and (min-width: 1024px) {
 
-    .fonctionnement-steps {
-        flex-direction: row;
-    }
+    .fonctionnement {
+        padding-left: 11%;
+        padding-right: 11%;
 
+        .fonctionnement-steps {
+            flex-direction: row;
+        }
+    }
 
     .fonctionnement h1 {
         padding-left: 11%;

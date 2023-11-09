@@ -93,7 +93,7 @@
 }
 
 .menus-card-plat {
-    width: 93%;
+    width: 95%;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -116,6 +116,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+
+    h3 {
+        font-weight: 500;
+    }
 
     p {
         padding-top: 5px;
@@ -175,7 +179,7 @@
     align-items: center;
     font-weight: 700;
     position: absolute;
-    right: 4%;
+    right: 2%;
     margin-left: 10px;
     transform: translateX(0);
     transition: transform 750ms ease;

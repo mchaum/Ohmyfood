@@ -147,15 +147,16 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
   cursor: pointer;
 }
-.button-grey .button-grey-icon {
+.button-grey:hover .button-grey-icon {
+  color: #9356DC;
+}
+
+.button-grey-icon {
   padding-right: 15px;
   color: #7E7E7E;
-}
-.button-grey .fa-store {
-  padding-right: 15px;
-  color: #9356DC;
 }
 
 header .logo {
@@ -231,13 +232,13 @@ footer h2 {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
-  color: #353535;
+  color: var(#353535);
 }
 .location input::placeholder {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
-  color: #353535;
+  color: var(#353535);
 }
 .location .fa-location-dot {
   width: 12px;
@@ -259,7 +260,7 @@ footer h2 {
 .explore p {
   padding-bottom: 30px;
   font-size: 18px;
-  color: #353535;
+  color: var(#353535);
 }
 .explore .button-violet {
   margin-bottom: 30px;
@@ -307,30 +308,6 @@ footer h2 {
   font-weight: 500;
   position: absolute;
   left: 20px;
-}
-
-.button-grey {
-  height: 20px;
-  background-color: #f6f6f6;
-  padding: 28px 38px 28px 28px;
-  border: none;
-  border-radius: 20px;
-  margin: 0 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  width: 100%;
-}
-
-.button-grey-icon {
-  padding-right: 15px;
-  color: #7E7E7E;
-}
-
-.fa-store {
-  padding-right: 15px;
-  color: #9356DC;
 }
 
 /*****Restaurants*****/
